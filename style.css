@@ -367,7 +367,7 @@ textarea{ resize: vertical; }
 
 /* Ajustes por marca (aqui você controla o tamanho) */
 .partner-logo.porto img{ height: 40px; }
-.partner-logo.azul img{ height: 400px; transform: translateY(2px); } /* era 550px e quebrava */
+.partner-logo.azul img{ height: 40px; transform: translateY(2px); } /* era 550px e quebrava */
 .partner-logo.itau img{ height: 70px; }
 .partner-logo.mitsui img{ height: 80px; opacity: .88; }
 .partner-logo.lojacorr img{ height: 90px; opacity: .90; }
@@ -595,7 +595,7 @@ textarea{ resize: vertical; }
 
   /* OVERRIDES por marca (MOBILE) — para não quebrar */
   .partner-logo.porto img{ height: 36px; }
-  .partner-logo.azul img{ height: 400px; transform: none; } /* MUITO IMPORTANTE: não usar 550px no mobile */
+  .partner-logo.azul img{ height: 40px; transform: none; } /* MUITO IMPORTANTE: não usar 550px no mobile */
   .partner-logo.itau img{ height: 44px; }
   .partner-logo.mitsui img{ height: 48px; }
   .partner-logo.lojacorr img{ height: 46px; }
@@ -632,3 +632,4 @@ textarea{ resize: vertical; }
     gap: 4px;
   }
 }
+
