@@ -499,3 +499,136 @@ textarea{ resize: vertical; }
   .brand-logo{ height: 56px; }
   .partners{ justify-content:center; }
 }
+
+/* =========================
+   MOBILE FIX (cole no final)
+   ========================= */
+
+/* Tablets e abaixo */
+@media (max-width: 900px){
+  .topbar{ position: relative; top:auto; }
+  .header{ top: 0; }
+
+  .topbar-inner{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    padding: 10px 0;
+    line-height: 1.35;
+  }
+
+  .header-inner{
+    padding: 12px 0;
+  }
+
+  .brand{ min-width: auto; }
+  .brand-logo{
+    height: 54px;
+  }
+
+  .hero--full{
+    padding: 36px 0 22px;
+    min-height: auto;
+  }
+
+  .hero-content{
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .hero-text h1{
+    font-size: clamp(26px, 7vw, 40px);
+    line-height: 1.08;
+  }
+
+  .lead{
+    font-size: 15px;
+    margin: 12px 0 14px;
+  }
+
+  .hero-cta{
+    gap: 10px;
+  }
+
+  .quote{
+    padding: 14px;
+  }
+
+  .cards{ grid-template-columns: 1fr; }
+  .steps{ grid-template-columns: 1fr; }
+  .why{ grid-template-columns: 1fr; }
+
+  .about{ grid-template-columns: 1fr; }
+  .contact{ grid-template-columns: 1fr; }
+
+  .footer-grid{
+    grid-template-columns: 1fr;
+  }
+
+  /* A curva do hero fica menor no mobile para não “comer” conteúdo */
+  .hero-curve{
+    bottom: -95px;
+    height: 170px;
+  }
+
+  /* Botões cheios no mobile (melhor UX) */
+  .btn{
+    width: 100%;
+  }
+  .hero-cta .btn{
+    width: 100%;
+  }
+
+  /* parceiros: vira grade e centraliza */
+  .partners{
+    justify-content: center;
+    gap: 16px;
+  }
+  .partner-logo{
+    flex: 0 1 140px;
+    height: 70px;
+  }
+  .partner-logo img{
+    max-width: 160px;
+    height: 44px; /* regra mobile */
+  }
+
+  /* OVERRIDES por marca (MOBILE) — para não quebrar */
+  .partner-logo.porto img{ height: 36px; }
+  .partner-logo.azul img{ height: 400px; transform: none; } /* MUITO IMPORTANTE: não usar 550px no mobile */
+  .partner-logo.itau img{ height: 44px; }
+  .partner-logo.mitsui img{ height: 48px; }
+  .partner-logo.lojacorr img{ height: 46px; }
+}
+
+/* Celulares pequenos */
+@media (max-width: 420px){
+  .container{
+    width: min(var(--container), calc(100% - 22px));
+  }
+
+  .hero-bg img{
+    object-position: center;
+  }
+
+  .badge{
+    font-size: 12px;
+    padding: 7px 9px;
+  }
+
+  .social-icon{
+    width: 54px;
+    height: 54px;
+  }
+
+  .profile-block img{
+    width: 56px;
+    height: 56px;
+  }
+
+  .hours .row{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}
